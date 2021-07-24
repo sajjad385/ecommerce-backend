@@ -5,10 +5,11 @@ namespace App\Repositories;
 
 
 use App\Http\Requests\ProductRequest;
+use App\Interfaces\ProductRepositoryInterface;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
-class ProductRepository
+class ProductRepository implements ProductRepositoryInterface
 {
     /**
      * @param Request $request
